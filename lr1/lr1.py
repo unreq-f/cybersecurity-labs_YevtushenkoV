@@ -49,7 +49,8 @@ def analyze_password():
     else:
         issues.append("Відсутні великі літери")
 
-    if has_lower: score += 1
+    if has_lower:
+        score += 1
 
     if has_digit:
         score += 1
